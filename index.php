@@ -2,6 +2,8 @@
 include_once "Connect.php";
 ?>
 
+<!-- Note: Ik snap echt niks van de PHP, Knocker ga alstjeblieft gewoon over naar nederlands zodat je het normaal kan uitleggen want bijna niemand snapt er iets van, Bedankt-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -94,6 +96,12 @@ include_once "Connect.php";
               <input type="hidden" name="heroId" value="<?php echo $heroid; ?>"/>
             </div>
           </fieldset>
+        </form>
+        <form id="Comment" action="" method="post">
+          <input type="text" id="commentTextbox" required />
+          <input type="hidden" value="heroid" />
+          <input type="hidden" value="teamid" />
+          <input type="submit" name="SubmitComment" value="POST" />
         </form>
       </div>
     </div>
